@@ -25,7 +25,7 @@ SECRET_KEY = '2@9o^n%7&c!)s3bc$gr=1s)u_*xylta12ybhh2fkfo9%lt(&rp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', '192.168.1.97', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     # My apps,
     'api.apps.ApiConfig',
     'rest_framework',
-    'frontend.apps.FrontendConfig'
+    'frontend.apps.FrontendConfig',
+    'spotify.apps.SpotifyConfig'
 ]
 
 MIDDLEWARE = [
